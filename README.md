@@ -154,7 +154,7 @@ When encrypting documents:
 2. Creates a database backup (unless --skip-backup is used)
 3. Retrieves all documents where `kodiert = 0` (unencrypted)
 4. For each document:
-   - Encrypts the `inhalt` field using RHD encoding
+   - Encrypts the `inhalt` field using TANSS encoding
    - Updates the document with encrypted content
    - Sets `kodiert = 1`
 5. Provides summary of successful/failed operations
@@ -166,7 +166,7 @@ When decrypting documents:
 2. Creates a database backup (unless --skip-backup is used)
 3. Retrieves all documents where `kodiert = 1` (encrypted)
 4. For each document:
-   - Decrypts the `inhalt` field using RHD decoding
+   - Decrypts the `inhalt` field using TANSS decoding
    - Updates the document with decrypted content
    - Sets `kodiert = 0`
 5. Provides summary of successful/failed operations
@@ -202,9 +202,9 @@ Validation mode (`--validate`) tests encoding/decoding on ALL documents without 
 
 This is useful for identifying potential issues before performing actual encryption/decryption operations.
 
-## RHD Encoding Algorithm
+## TANSS Encoding Algorithm
 
-The tool uses the RHD encoding algorithm, which performs the following steps:
+The tool uses the TANSS encoding algorithm, which performs the following steps:
 
 **Encoding:**
 1. Base64 encode
@@ -302,7 +302,7 @@ All errors are logged with details for troubleshooting.
 ```
 tanss-tools/
 ├── tanss-coder.py        # Main script
-├── encoder.py            # RHD encoding/decoding class
+├── tanss_crypto.py       # TANSS encoding/decoding class
 ├── config.ini            # Database configuration (create from example)
 ├── config.ini.example    # Configuration template
 ├── requirements.txt      # Python dependencies
