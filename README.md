@@ -1,6 +1,6 @@
 # TANSS Document Encryption/Decryption Tool
 
-A Python tool for encrypting and decrypting documents in the TANSS MySQL database using the RHD encoding algorithm.
+A Python tool for encrypting and decrypting documents in the TANSS MySQL database.
 
 ## Features
 
