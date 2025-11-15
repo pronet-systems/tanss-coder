@@ -1,6 +1,6 @@
 # TANSS Document Encryption/Decryption Tool
 
-A Python tool for encrypting and decrypting documents in the TANSS MySQL database.
+A Python tool for encrypting and decrypting all documents in the TANSS MySQL database. This can be helpful when connecting TANSS to a RAG like Onyx.
 
 ## Features
 
