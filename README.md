@@ -222,7 +222,7 @@ The tool uses the TANSS encoding algorithm, which performs the following steps:
 
 ### Character Encoding
 
-The tool uses **latin-1** (ISO-8859-1) character encoding to match the original PHP implementation. This encoding supports characters 0-255, which includes:
+The tool uses **latin-1** (ISO-8859-1) character encoding. This encoding supports characters 0-255, which includes:
 - Standard ASCII characters (0-127)
 - Western European characters (128-255): àáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ
 
